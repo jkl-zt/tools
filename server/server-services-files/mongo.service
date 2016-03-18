@@ -1,0 +1,13 @@
+[Unit]
+Description=MONGOD supervision process
+After=network.target
+
+[Service]
+Environment=PATH=/usr/local/mongodb/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+#Type=forking
+ExecStart=/usr/local/mongodb/bin/mongod --logpath "/data/logs/mongo/mongod.log" --logappend
+#ExecStop=/bin/kill -HUP $MAINPID &
+#Restart=always
+
+[Install]
+WantedBy=multi.target
