@@ -1,0 +1,73 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}]
+@="腾讯QQ"
+"LocalizedString"="腾讯QQ"
+"InfoTip"="禁止在此电脑登陆QQ,如被盗号，概不负责"
+"TileInfo"="prop:System.ItemAuthors"
+"System.ItemAuthors"="禁止在此电脑登陆QQ,如被盗号，概不负责"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\DefaultIcon]
+@="D:\\Program Files (x86)\\Tencent\\QQ\\Bin\\QQ.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\InprocServer32]
+"ThreadingModel"="Apartment"
+@="%SystemRoot%\\system32\\shdocvw.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\Instance]
+@=""
+"CLSID"="{0AFACED1-E828-11D1-9187-B532F1E9575D}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\Instance\InitPropertyBag]
+"Target"="D:\\Program Files (x86)\\Tencent\\QQ\\Bin\\"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\Shell]
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\Shell\Open]
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\Shell\Open\Command]
+@="D:\\Program Files (x86)\\Tencent\\QQ\\Bin\\QQ.exe -diskopen"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000001}\ShellFolder]
+"Attributes"=dword:48800108
+"PinToNameSpaceTree"=""
+"QueryForOverlay"=""
+"wantsFORPARSING"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace\{00000000-0000-0000-0000-000000000001}]
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}]
+@="SUBLIME"
+"LocalizedString"="SUBLIME"
+"InfoTip"="文本编辑器"
+"TileInfo"="prop:System.ItemAuthors"
+"System.ItemAuthors"="文本编辑器"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\DefaultIcon]
+@="D:\\Program Files\\Sublime Text 3\\sublime_text.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\InprocServer32]
+"ThreadingModel"="Apartment"
+@="%SystemRoot%\\system32\\shdocvw.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\Instance]
+@=""
+"CLSID"="{0AFACED1-E828-11D1-9187-B532F1E9575D}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\Instance\InitPropertyBag]
+"Target"="D:\\Program Files\\Sublime Text 3\\"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\Shell]
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\Shell\Open]
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\Shell\Open\Command]
+@="D:\\Program Files\\Sublime Text 3\\sublime_text.exe -diskopen"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000002}\ShellFolder]
+"Attributes"=dword:48800108
+"PinToNameSpaceTree"=""
+"QueryForOverlay"=""
+"wantsFORPARSING"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\Namespace\{00000000-0000-0000-0000-000000000002}]
