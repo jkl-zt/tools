@@ -1,0 +1,14 @@
+[Unit]
+Description=NGINX supervision process
+After=network.target
+
+[Service]
+Environment=PATH=/usr/local/nginx/sbin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+Type=forking
+ExecStart=/usr/local/nginx/sbin/nginx
+ExecReload=/usr/local/nginx/sbin/nginx -s reload
+ExecStop=/bin/kill -9 $MAINPID
+#Restart=always
+
+[Install]
+WantedBy=multi.target
