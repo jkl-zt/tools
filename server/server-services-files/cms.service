@@ -1,0 +1,13 @@
+[Unit]
+Description=CMS supervision process
+After=network.target
+
+[Service]
+Environment=PATH=/root/.nvm/versions/node/v5.8.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+#Type=forking
+ExecStart=/root/.nvm/versions/node/v5.8.0/bin/forever -l "/data/logs/cms/cms.log" -o "/data/logs/cms/output.log" -e "/data/logs/cms/error.log" -a --workingDir "/data/www/cms/" -c "node" "/data/www/cms/lib/app.js" "--cms" &
+ExecStop=/root/.nvm/versions/node/v5.7.0/bin/forever stop "node" "/data/www/cms/lib/app.js" "--cms" &
+#Restart=always
+
+[Install]
+WantedBy=multi.target
